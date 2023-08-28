@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Input Example</title>
+</head>
+<body>
+  <label for="languageInput">What language was created to add interactivity to the Web?</label>
+  <input type="text" id="languageInput">
+  
+  <script>
+  const languageInput = document.getElementById("languageInput");
+
+languageInput.addEventListener("change", function() {
+  const userInput = languageInput.value;
+  alert("You typed: " + userInput);
+  const preferredLibrary = prompt("Which code library do you prefer? Vue, React, or jQuery?");
+  alert("Your preferred code library: " + preferredLibrary);
+});
+  </script>
+</body>
+</html>
